@@ -49,7 +49,7 @@
     <section class="hero section">
       <div class="container hero-container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-btn">Order Service</button>
+        <button type="button" class="hero-btn" data-modal-open>Order Service</button>
       </div>
     </section>
     <section class="advantage section">
@@ -246,8 +246,7 @@
                   </a>
                 </li>
                 <li class="team-soc-item">
-                  <a class="team-soc" href="./images/symbol.svg" target="_blank" rel="noopener noreferrer"
-                    style="height: 16px;">
+                  <a class="team-soc" href="./images/symbol.svg" target="_blank" rel="noopener noreferrer">
                     <svg class=" team-soc-icon" width="16" height="16">
                       <use href="./images/symbol.svg#icon-facebook"></use>
                     </svg>
@@ -269,6 +268,55 @@
                 </li>
               </ul>
             </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="customers section">
+      <div class="container customers-container">
+        <h2 class="team-title">Customers</h2>
+        <ul class="customers-list list">
+          <li class="customers-item">
+            <a href="" class="customers-ikon" target="_blank">
+              <svg width="104" height="56">
+                <use href="./images/symbol.svg#icon-customer-logo-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="" class="customers-ikon" target="_blank">
+              <svg width="104" height="56">
+                <use href="./images/symbol.svg#icon-customers-logo-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="" class="customers-ikon" target="_blank">
+              <svg width="104" height="56">
+                <use href="./images/symbol.svg#icon-customers-logo-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="" class="customers-ikon" target="_blank">
+              <svg width="104" height="56">
+                <use href="./images/symbol.svg#icon-customers-logo-4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="" class="customers-ikon" target="_blank">
+              <svg width="104" height="56">
+                <use href="./images/symbol.svg#icon-customers-logo-5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers-item">
+            <a href="" class="customers-ikon" target="_blank">
+              <svg width="104" height="56">
+                <use href="./images/symbol.svg#icon-customers-logo-6"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -309,12 +357,22 @@
             <a class="footer-soc" href="http://" target="_blank" rel="noopener noreferrer">
               <svg class="team-soc-icon" width="24" height="24">
                 <use href="./images/symbol.svg#icon-linkedin"></use>
-              </svg></a>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-btn" data-modal-close><svg class="modal-btn-close" width="8" height="8">
+          <use href="./images/symbol.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
