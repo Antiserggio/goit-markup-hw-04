@@ -40,6 +40,15 @@ p {
   margin: 0;
 }
 
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
 .link {
   text-decoration: none;
 }
