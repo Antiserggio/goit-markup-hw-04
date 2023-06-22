@@ -411,14 +411,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: var(--transition);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc:hover,
 .team-soc:focus {
   background-color: var(--color-action-secondary);
-  transition: var(--transition);
 }
 
 .team-soc-icon {
