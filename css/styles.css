@@ -181,7 +181,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   background-color: var(--color-primary);
-  background-image: linear-gradient(0deg, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/hero/hero-image.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -375,12 +375,13 @@ img {
 .team-soc-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
 .team-soc-item {
-  display: block;
   width: 40px;
   height: 40px;
   width: calc((100% - 72px) / 4);
@@ -419,6 +420,20 @@ img {
 
 .customers {
   padding: 120px 0;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  text-transform: capitalize;
+  color: var(--color-primary);
+  text-align: center;
+  max-width: 163px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .customers-list {
@@ -527,9 +542,10 @@ img {
 }
 
 .footer-soc-text {
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-bg);
+  color: var(--color-invert);
   max-width: 98px;
   margin-bottom: 16px;
 }
@@ -593,6 +609,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition);
   padding: 0;
   transition: background-color var(--transition),
     border var(--transition);
@@ -611,7 +628,9 @@ img {
   background-color: #E7E9FC;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  padding: 0;
   cursor: pointer;
+  transition: background-color var(--transition), border var(--transition);
 }
 
 
@@ -621,6 +640,10 @@ img {
   background-color: var(--color-action-secondary);
   border: none;
   fill: var(--color-invert);
+  transition: fill var(--transition);
+}
+
+.modal-btn-close {
   transition: fill var(--transition);
 }
 
@@ -696,13 +719,22 @@ img {
 
 .card-item {
   width: calc((100% - 48px) / 3);
-
-
 }
 
 
 
-.card-item-cover {}
+.card-item-link {
+  display: block;
+  transition: box-shadow var(--transition);
+}
+
+.card-item-link:hover,
+.card-item-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  ;
+}
 
 .card-app {
   padding: 32px 16px;
@@ -720,7 +752,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
   height: 100%;
   width: 100%;
   transform: translateY(100%);
@@ -732,6 +764,7 @@ img {
   background-color: var(--color-action);
 }
 
-.card-item:hover .card-cover-text {
+.card-item:hover .card-cover-text,
+.card-item:focus .card-cover-text {
   transform: translateY(0);
 }
