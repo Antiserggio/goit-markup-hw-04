@@ -389,6 +389,7 @@ img {
   align-items: center;
   background-color: var(--color-action);
   border-radius: 50%;
+  transition: background-color var(--transition);
 }
 
 .team-soc-item:hover {
@@ -407,7 +408,8 @@ img {
   transition: var(--transition);
 }
 
-.team-soc:hover {
+.team-soc:hover,
+.team-soc:focus {
   background-color: var(--color-action-secondary);
   transition: var(--transition);
 }
@@ -764,7 +766,7 @@ img {
   background-color: var(--color-action);
 }
 
-.card-item:hover .card-cover-text,
-.card-item:focus .card-cover-text {
+.card-item-link:hover .card-cover-text,
+.card-item-link:focus .card-cover-text {
   transform: translateY(0);
 }
