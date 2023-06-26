@@ -599,9 +599,10 @@ input {
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 80px;
+  padding-left: 0;
 }
 
 .footer-bottom-text {
@@ -617,10 +618,15 @@ input {
 
 .footer-form {
   display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
 
 }
 
-.footer-label {}
+.footer-label {
+  padding-left: 0;
+}
 
 .footer-input {
   width: 264px;
@@ -630,7 +636,6 @@ input {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding-left: 16px;
-  margin-right: 24px;
 }
 
 .footer-input::placeholder {
@@ -745,11 +750,11 @@ input {
 
 .modal-input {
   width: 100%;
-  height: 58px;
+  height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.40);
   background-color: transparent;
-  padding-left: 34px;
+  padding-left: 38px;
   outline: transparent;
   transition: border-color var(--transition);
 }
@@ -771,10 +776,10 @@ input {
 
 .modal-label {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
-  color: (#8E8F99);
-  display: inline-block;
+  color: #8e8f99;
+  display: block;
   margin-bottom: 4px;
 }
 
@@ -784,10 +789,11 @@ input {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.40);
   background-color: transparent;
+  color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
   outline: transparent;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   resize: none;
   transition: border-color var(--transition);
@@ -808,6 +814,14 @@ input {
   margin-bottom: 8px;
 }
 
+.modal-field-textarea {
+  margin-bottom: 16px;
+}
+
+.modal-field-checkbox {
+  margin-bottom: 24px;
+}
+
 .inupt-icon {
   fill: var(--color-primary);
   position: absolute;
@@ -823,7 +837,7 @@ input {
 
 .check-text {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   color: #8E8F99;
   display: flex;
@@ -842,11 +856,11 @@ input {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.40);
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   fill: transparent;
-  transition: var(--transition);
+  transition: background-color var(--transition);
 }
 
 .input-check:checked+.check-text span {
