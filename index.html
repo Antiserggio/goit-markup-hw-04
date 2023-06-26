@@ -49,7 +49,9 @@
     <section class="hero section">
       <div class="container hero-container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-btn" data-modal-open>Order Service</button>
+        <button type="button" class="hero-btn" data-modal-open>
+          Order Service
+        </button>
       </div>
     </section>
     <section class="advantage section">
@@ -145,7 +147,7 @@
                 </li>
                 <li class="team-soc-item">
                   <a class="team-soc" href="./images/icons.svg" target="_blank" rel="noopener noreferrer">
-                    <svg class=" team-soc-icon" width="16" height="16">
+                    <svg class="team-soc-icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
@@ -184,7 +186,7 @@
                 </li>
                 <li class="team-soc-item">
                   <a class="team-soc" href="./images/symbol.svg" target="_blank" rel="noopener noreferrer">
-                    <svg class=" team-soc-icon" width="16" height="16">
+                    <svg class="team-soc-icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
@@ -223,7 +225,7 @@
                 </li>
                 <li class="team-soc-item">
                   <a class="team-soc" href="./images/symbol.svg" target="_blank" rel="noopener noreferrer">
-                    <svg class=" team-soc-icon" width="16" height="16">
+                    <svg class="team-soc-icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
@@ -262,7 +264,7 @@
                 </li>
                 <li class="team-soc-item">
                   <a class="team-soc" href="./images/symbol.svg" target="_blank" rel="noopener noreferrer">
-                    <svg class=" team-soc-icon" width="16" height="16">
+                    <svg class="team-soc-icon" width="16" height="16">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
@@ -359,7 +361,7 @@
           </li>
           <li class="footer-soc-item">
             <a class="footer-soc" href="" target="_blank" rel="noopener noreferrer">
-              <svg class=" team-soc-icon" width="24" height="24">
+              <svg class="team-soc-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg></a>
           </li>
@@ -377,15 +379,73 @@
             </a>
           </li>
         </ul>
+
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">Subscribe</p>
+        <form class="footer-form">
+          <label for="footer-email" class="footer-label" aria-label="footer email"></label>
+          <input type="email" name="footer-email" id="footer-email" placeholder="E-mail" class="footer-input">
+          <button type="submit" class="footer-btn">Subscribe
+            <svg class="footer-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button type="button" class="modal-btn" data-modal-close><svg class="modal-btn-close" width="8" height="8">
+      <button type="button" class="modal-btn" data-modal-close>
+        <svg class="modal-btn-close" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
       </button>
+      <p class="modal-title">Leave your contacts and we will call you back</p>
+      <form class="modal-form">
+        <div class="modal-field">
+          <label for="user-name" class="modal-label">Name</label>
+          <div class="input-wrap">
+            <input type="text" class="modal-input" name="user-name" id="user-name" />
+            <svg class="inupt-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-tel" class="modal-label">Phone</label>
+          <div class="input-wrap">
+            <input type="tel" class="modal-input" name="user-tel" id="user-tel" />
+            <svg class="inupt-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-email" class="modal-label">Email</label>
+          <div class="input-wrap">
+            <input type="email" class="modal-input" name="user-email" id="user-email" />
+            <svg class="inupt-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="modal-text" class="modal-label">Comment</label>
+          <textarea name="modal-text" id="modal-text" placeholder="Text input" class="modal-textarea"></textarea>
+        </div>
+        <div class="modal-field">
+          <input type="checkbox" name="policy" id="policy" class="input-check visually-hidden" value="true">
+          <label for="policy" class="check-text"><span>
+              <svg class="check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check-click"></use>
+              </svg>
+            </span> I accept the terms and conditions of the <a href="">
+              Privacy Policy</a></label>
+        </div>
+        <button type="submit" class="modal-btn-send">Send</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
